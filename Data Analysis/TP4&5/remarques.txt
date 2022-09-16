@@ -1,0 +1,21 @@
+Remarques TP4-5 sur les méthodes de visualisation :
+
+- PCA :
+	- s'applique en priorité sur des données centrées-réduites(ou à minima centrées) : c'est plus efficace pour les calculs.
+	- Marche aussi avec les données brutes si pas de problème d'échelle, possible aussi en 2ème instance si ça ne donne rien avec les données centrées-réduites
+
+- ISOMAP, LLE, T-SNE et MDS :
+	- s'applique en principe sur les données brutes : on peut éventuellement les centrer, mais on évite de les réduire, ça peut casser le manifold. En effet, s'il existe, ce manifold sera probablement dans l'espace original, et pas dans l'espace cnetré-réduit.
+	- seulement en deuxième instance si ça ne marche pas bien avec les données brutes on peut essayer sur les centrées-réduites
+	
+	
+	
+Quizz PCA :
+A. : St Tropez
+B. : Deauville
+C. Faux, ils sont juste correllés, mais pas indentiques car pas rigoureusement superposés. On peut ajouter qu'avec 23% d'information manquante et un réseau routier variable, il n'y a pas de raison que ce soit totalement redondant.
+D. Non, ce n'est pas Annecy, c'est à cause de la compression d'information (77% seulement)
+E. Vrai
+F. Vrai
+G. Faux OU on ne peut pas savoir. L'ACP et le cercle de correlation ne sont pas centrés en 0 pour les variables originales. Préduire le signe est impossible.
+H. Pornic et Granville
